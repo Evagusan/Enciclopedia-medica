@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enciclopedia Médica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="serif.css" rel="stylesheet" type="text/css" media="print">
+    <style>
+    a:focus, button:focus {
+        outline: 2px solid red;
+        outline-offset: 4px;
+    }
+    .azul, #migas a, footer a, input[type="submit"] {
+        color: white;
+    }
+    header, #logo-container, #migas, footer {
+        background-color: #0056b3;
+        padding: 10px;
+    }
+    header {
+        text-align: center;
+        background-color: white;
+    }
+    #migas {
+        text-align: left;
+    }
+    #migas a, footer a {
+        text-decoration: none;
+    }
+    #migas a:hover, footer a:hover, input[type="submit"]:hover {
+        text-decoration: underline;
+        background-color: #004494;
+    }
+    footer {
+        font-size: 0.8em;
+        text-align: center;
+    }
+    main {
+        color: black;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+    input[type="text"] {
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+        background-color: #0056b3;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="../index.html" aria-label="Volver a la página principal">
+                <img src="../imagenes/logo.png" alt="Logo de MedlinePlus" width="400" height="200">
+            </a>
+        </div>
+        <h1 style="color: black;">MedlinePlus</h1>
+        <p>Información de salud para usted</p>
+    </header>
+
+    <div id="migas">
+        <p>Ruta de navegación</p>
+        <a href="../index.html">Inicio</a> &gt; <a href="buscador.html">Buscador</a>
+    </div>
+
+    <main>
+        <section id="buscador">
+            <h2>Buscar en la Enciclopedia</h2>
+            <p>Nota: Los campos marcados con * son obligatorios.</p>
+            <form action="respuestabuscador.html" method="GET">
+                <label for="descripcion">* Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" placeholder="Ingrese la descripción del artículo" required>
+
+                <label for="causas">Causas:</label>
+                <input type="text" id="causas" name="causas" placeholder="Ingrese las causas del artículo">
+
+                <label for="sintomas">Síntomas:</label>
+                <input type="text" id="sintomas" name="sintomas" placeholder="Ingrese los síntomas del artículo">
+
+                <label for="examenes">Pruebas y exámenes:</label>
+                <input type="text" id="examenes" name="examenes" placeholder="Ingrese las pruebas o exámenes del artículo">
+
+                <label for="tratamiento">Tratamiento:</label>
+                <input type="text" id="tratamiento" name="tratamiento" placeholder="Ingrese el tratamiento del artículo">
+
+                <label for="expectativas">Expectativas:</label>
+                <input type="text" id="expectativas" name="expectativas" placeholder="Ingrese las expectativas del artículo">
+
+                <input type="submit" value="Buscar">
+            </form>
+            <p>Para volver a la página principal pulsa <a href="../index.html">aquí</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="mailto:egs98@alu.ua.es">Eva Gutiérrez Sánchez</a> &copy; <span lang="en">egs98@alu.ua.es</span></p>
+        <p><a href="../declaracionaccesibilidad.html">Declaración de Accesibilidad</a></p>
+        <p>Universidad de Alicante</p>
+    </footer>
+</body>
+</html>
