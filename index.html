@@ -8,7 +8,7 @@
     <link href="serif.css" rel="stylesheet" type="text/css" media="print">
     <style>
         a:focus, button:focus {
-            outline: 2px solid #0056b3;
+            outline: 2px solid red;
             outline-offset: 4px;
         }
         .azul {
@@ -16,6 +16,7 @@
         }
         header {
             text-align: center;
+            background-color: white;
         }
         .logo-container {
             background-color: #0056b3;
@@ -23,17 +24,25 @@
         }
         nav ul {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #0056b3;
+            padding: 0;
+            margin: 0;
         }
         nav ul li {
             list-style: none;
-            margin: 0 10px;
+            margin: 0;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            height: 50px;
+            line-height: 50px; /* Asegura la alineación vertical */
         }
         nav ul li a:hover {
             background-color: #004599;
@@ -51,6 +60,19 @@
         }
         footer a:hover {
             text-decoration: underline;
+        }
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            .logo-container img {
+                width: 100%;
+                height: auto;
+            }
+            nav ul li a {
+                font-size: 1em;
+                padding: 10px 15px;
+                height: auto;
+                line-height: normal;
+            }
         }
     </style>
 </head>
