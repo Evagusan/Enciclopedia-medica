@@ -1,0 +1,164 @@
+/* Estilo accesible para aumento de letra y accesibilidad para personas con dislexia */
+body {
+    font-family: 'OpenDyslexic', Arial, sans-serif; /* Usar OpenDyslexic si está disponible */
+    font-size: 1.4em; /* Aumentar el tamaño de la letra */
+    line-height: 1.6em; /* Aumentar el interlineado para mejorar la legibilidad */
+    color: #000000;
+    background-color: #f4f4f4; /* Fondo más claro para reducir el contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2, h3, h4 {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #0056b3; /* Color de los encabezados */
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+
+/* Enlaces */
+a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #1166cc;
+    text-decoration: underline;
+}
+
+/* Texto en párrafos */
+p, li {
+    font-size: 1.4em;
+    margin-bottom: 1.2em; /* Añadir espacio adicional entre párrafos */
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+form label {
+    font-size: 1.4em;
+    color: #0056b3; /* Color azul */
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="date"], 
+form textarea, 
+form select {
+    width: 100%; 
+    padding: 10px;
+    font-size: 1.4em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #0056b3; /* Fondo azul */
+    color: white;
+    font-size: 1.4em;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004494; /* Fondo más oscuro en hover */
+}
+
+/* Tablas */
+table {
+    font-size: 1.4em; /* Tamaño de letra aumentado */
+    background-color: #33ccff; /* Fondo de la tabla */
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid cyan;
+}
+
+caption {
+    font-size: 1.8em; /* Texto de la leyenda más grande */
+    font-weight: bold;
+    background-color: #0056b3; /* Fondo azul */
+    color: #fff;
+    padding: 15px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000; /* Bordes de las celdas */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c7f2ff; /* Filas impares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #33ccff; /* Filas pares */
+}
+
+tbody tr:hover {
+    background-color: white; /* Hover en las filas */
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.2em; /* Aumentar el tamaño del texto en el footer */
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+    color:#fff;
+    text-decoration: underline;
+}
+
+/* Saltar a contenido */
+.saltar-a-contenido {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.saltar-a-contenido:focus {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.2em;
+    }
+}

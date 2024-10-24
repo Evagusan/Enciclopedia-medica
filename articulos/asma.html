@@ -2,45 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Enciclopedia Médica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="serif.css" rel="stylesheet" type="text/css" media="print">
-    <style>
-    a:focus, button:focus {
-        outline: 2px solid red;
-        outline-offset: 4px;
-    }
-    .azul, #migas a, footer a {
-        color: #0056b3;
-    }
-    header, .logo-container, #migas, footer {
-        padding: 10px;
-    }
-    header {
-        text-align: center;
-        background-color: white;
-    }
-    .logo-container, #migas, footer {
-        background-color: #0056b3;
-    }
-    #migas {
-        color: white;
-        text-align: left;
-    }
-    #migas a, footer a {
-        text-decoration: none;
-        color: white;
-    }
-    #migas a:hover, footer a:hover {
-        text-decoration: underline;
-    }
-    footer {
-        color: white;
-        font-size: 0.8em;
-        text-align: center;
-    }
-</style>
+    <title>Asma - Enciclopedia Médica</title>
+    <link rel="stylesheet" href="impresion.css" media="print" />
+    <link rel="stylesheet" href="../style.css" title="Estilo predeterminado" />
+    <link rel="alternate stylesheet" href="../modonoche.css" title="Modo Noche" />
+    <link rel="alternate stylesheet" href="../altocontraste.css" title="Modo Alto Contraste" />
+    <link rel="alternate stylesheet" href="../accesibleaumentoletra.css" title="Accesible - Tamaño grande" />
+    <link rel="alternate stylesheet" href="../accesible.css" title="Modo Accesible" />
 </head>
 <body>
 
@@ -53,6 +22,7 @@
         <h1 style="color: black;">MedlinePlus</h1> <!-- Título en negro -->
         <p>Información de salud para usted</p>
     </header>
+    <a href="#video relacionado" class="saltar-a-contenido">Saltar al video</a>
 
     <div id="migas">
         <p>Ruta de navegación</p>
@@ -97,7 +67,7 @@
                 <a href="../tablas/sintomasymedicamentosasma.html">Síntomas y medicamentos para el asma</a><br><br>
                 
                 <h3>Videos Relacionados</h3>
-                <p>Video explicativo de Asma:</p>
+                <p id="video relacionado">Video explicativo de Asma:</p>
                 <p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/vNp115RbAA8?si=-ppjEr4kJhMDqyxK" title="Video sobre asma: síntomas y tratamiento" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </p>

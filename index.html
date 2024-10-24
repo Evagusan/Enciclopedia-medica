@@ -4,77 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar en la Enciclopedia Médica</title>
+    <link rel="stylesheet" href="style.css">
     <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="serif.css" rel="stylesheet" type="text/css" media="print">
-    <style>
-        a:focus, button:focus {
-            outline: 2px solid red;
-            outline-offset: 4px;
-        }
-        .azul {
-            color: #0056b3;
-        }
-        header {
-            text-align: center;
-            background-color: white;
-        }
-        .logo-container {
-            background-color: #0056b3;
-            padding: 20px 0;
-        }
-        nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            list-style: none;
-            margin: 0;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-            text-align: center;
-            font-size: 1.2em;
-            height: 50px;
-            line-height: 50px; /* Asegura la alineación vertical */
-        }
-        nav ul li a:hover {
-            background-color: #004599;
-        }
-        footer {
-            background-color: #0056b3;
-            color: white;
-            font-size: 0.8em;
-            text-align: center;
-            padding: 10px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        /* Estilos para dispositivos móviles */
-        @media (max-width: 768px) {
-            .logo-container img {
-                width: 100%;
-                height: auto;
-            }
-            nav ul li a {
-                font-size: 1em;
-                padding: 10px 15px;
-                height: auto;
-                line-height: normal;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="impresion.css" media="print" />
+    <link rel="stylesheet" href="style.css" title="Estilo predeterminado" />
+    <link rel="alternate stylesheet" href="modonoche.css" title="Modo Noche" />
+    <link rel="alternate stylesheet" href="altocontraste.css" title="Modo Alto Contraste" />
+    <link rel="alternate stylesheet" href="accesibleaumentoletra.css" title="Accesible - Tamaño grande" />
+    <link rel="alternate stylesheet" href="accesible.css" title="Modo Accesible" />
 </head>
 <body>
     <header>
@@ -181,7 +118,7 @@
     <footer>
         <p><a href="mailto:egs98@alu.ua.es" aria-label="Enviar un correo a Eva Gutiérrez Sánchez">Eva Gutiérrez Sánchez</a> &copy; <span lang="en">egs98@alu.ua.es</span></p>
         <p><a href="declaracionaccesibilidad.html" aria-label="Declaración de accesibilidad">Declaración de Accesibilidad</a></p>
-	<p>Universidad de Alicante</p>
+	    <p>Universidad de Alicante</p>
     </footer>
 </body>
 </html>

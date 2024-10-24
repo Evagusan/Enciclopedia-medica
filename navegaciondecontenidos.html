@@ -1,77 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Navegación de Contenidos - Enciclopedia Médica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="serif.css" rel="stylesheet" type="text/css" media="print">
-    <style>
-        a:focus, button:focus {
-            outline: 2px solid red;
-            outline-offset: 4px;
-        }
-        .azul {
-            color: #0056b3;
-        }
-        header {
-            text-align: center;
-            padding: 10px; 
-            background-color: white;
-        }
-        .logo-container {
-            background-color: #0056b3;
-            padding: 10px;
-        }
-        #migas {
-            background-color: #0056b3; 
-            color: white; 
-            padding: 10px; 
-            text-align: left;
-        }
-        #migas a {
-            color: white; 
-            text-decoration: none;
-        }
-        #migas a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #0056b3; 
-            color: white;
-            font-size: 0.8em;
-            text-align: center;
-            padding: 10px;
-        }
-        footer a {
-            color: white; 
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        main {
-            color: black;
-        }
-        nav {
-            color: black;
-        }
-        nav h3 {
-            color: black;
-        }
-        nav ul {
-            list-style-type: none; 
-            padding: 0;
-        }
-        nav ul li a {
-            color: #0056b3; 
-            text-decoration: none; 
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navegación de contenidos - Enciclopedia Médica</title>
+        <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="stylesheet" href="impresion.css" media="print" />
+        <link rel="stylesheet" href="style.css" title="Estilo predeterminado" />
+        <link rel="alternate stylesheet" href="modonoche.css" title="Modo Noche" />
+        <link rel="alternate stylesheet" href="altocontraste.css" title="Modo Alto Contraste" />
+        <link rel="alternate stylesheet" href="accesibleaumentoletra.css" title="Accesible - Tamaño grande" />
+        <link rel="alternate stylesheet" href="accesible.css" title="Modo Accesible" />
+    </head>
 <body>
 
     <header>
@@ -93,7 +33,7 @@
         <h2>Navegación de Contenidos</h2>
         <p>Encuentra rápidamente los artículos y recursos disponibles.</p>
 
-        <nav>
+        <section>
             <h3>Artículos</h3>
             <ul>
                 <li><a href="articulos/amigdalitis.html">Amigdalitis</a></li>
@@ -123,7 +63,7 @@
                 <li><a href="tablas/sintomasymedicamentosasma.html">Síntomas y Medicamentos para el Asma</a></li>
                 <li><a href="tablas/sintomasytiposgripe.html">Síntomas y Tipos de la Gripe</a></li>
             </ul>
-        </nav>
+        </section>
         
         <p>Para volver a la página principal pulsa <a href="index.html">aquí</a>.</p>
     </main>

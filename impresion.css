@@ -1,0 +1,46 @@
+/* Estilo de impresión */
+@media print {
+    body {
+        color: #000; /* Cambiar color a negro */
+        background-color: #fff; /* Fondo blanco */
+    }
+
+    
+    nav, .saltar-a-contenido, #toggle-contrast {
+        display: none;
+    }
+   
+    /* Mantener el header y footer visibles */
+    header {
+        display: block; /* Asegurarse de que el header (logo) se muestre */
+        page-break-after: avoid; /* Evitar que se rompa la página después del header */
+    }
+
+    footer {
+        display: block;
+        page-break-before: always;
+    }
+    h1, h2, h3, h4 {
+        color: #000;
+    }
+    a {
+        color: #000; /* Cambiar enlaces a negro */
+        text-decoration: underline; /* Subrayar enlaces */
+    }
+    body {
+        font-size: 12pt;
+    }
+
+    img.important {
+        display: block; /* Mostrar imágenes importantes */
+    }
+
+    /* Evitar cortes en las páginas */
+    @page {
+        margin: 1in; /* Margen de una pulgada */
+    }
+    /* Reglas para evitar "widows" y "orphans" */
+    h1, h2, h3, h4, p {
+        page-break-inside: avoid; /* Evitar saltos de página dentro de títulos y párrafos */
+    }
+}

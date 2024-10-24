@@ -1,0 +1,353 @@
+/* Estilos generales */
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    overflow-x: hidden;
+    .azul {
+        color: #0056b3;
+    }
+}
+header, nav, footer {
+    width: 100%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.logo-container {
+    background-color: #0056b3;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo-container img {
+    max-width: 100%;
+    height: auto;
+    background-color: #0056b3;
+}
+
+/* Saltar a contenido */
+.saltar-a-contenido {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    opacity: 0; 
+    pointer-events: none; 
+}
+.saltar-a-contenido:focus {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Migas de pan */
+#migas {
+    background-color: #0056b3;
+    padding: 0;
+    
+}
+#migas p {
+    color: #ffffff; /* Color del texto */
+    margin: 0; /* Sin margen para alineación */
+}
+#migas a {
+    color: #ffffff; /* Color de los enlaces en migas de pan */
+    text-decoration: underline;
+    text-align: left;
+    display: insline;
+}
+
+#migas a:hover {
+    color:  rgb(116, 0, 0);;
+    text-decoration: underline;
+}
+
+/* Navegación */
+nav {
+    background-color: #0056b3; /* Fondo azul para el nav */
+}
+
+nav ul {
+    display: flex; /* Usar flexbox para distribuir los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a múltiples filas */
+    padding: 10px 0; /* Añadir padding para separación */
+    margin: 0; /* Sin margen */
+    justify-content: flex-start; /* Centrar los elementos en el contenedor */
+}
+
+nav ul li {
+    list-style: none; /* Sin estilo de lista (eliminar los puntos) */
+    margin: 0; /* Sin margen entre elementos */
+    flex: 1 1 auto; /* Permitir que los elementos ocupen todo el ancho disponible */
+    min-width: 150px; /* Establecer un ancho mínimo para los elementos */
+    text-align: center; /* Alinear el contenido de los elementos al centro */
+    margin-bottom: 5px; /* Añadir un pequeño margen inferior para separar las filas */
+}
+
+nav ul li a {
+    color: white; /* Color blanco para el texto */
+    padding: 4px 8px; /* Añadir relleno dentro del enlace */
+    display: block; /* Hacer que el enlace ocupe todo el espacio disponible */
+    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+    text-align: center; /* Centrar el texto dentro del enlace */
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    overflow-y: auto;
+    color: black;
+}
+
+main ul li a{
+    color: #6b6060; 
+    text-decoration: underline;
+}
+
+main ul li a:hover {
+    color: rgb(116, 0, 0); /* Cambia el color al pasar el ratón por encima, si lo deseas */
+}
+main p a{
+    color: #6b6060; 
+    text-decoration: underline;
+}
+main p a:hover {
+    color: rgb(116, 0, 0); /* Cambia el color al pasar el ratón por encima, si lo deseas */
+}
+/* Títulos */
+h1 {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+/* Secciones */
+section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
+section a {
+    color: rgb(107, 96, 96); /* Establece el color rojo */
+    text-decoration: underline; /* Subraya los enlaces */
+}
+section a:hover {
+    color: rgb(116, 0, 0); /* Cambia el color al pasar el ratón por encima, si lo deseas */
+}
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: flex-start; /* Alineación a la izquierda */
+    border: 1px solid #ccc; /* Bordes del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+form label {
+    font-size: 16px;
+    color: #0056b3; /* Color azul */
+    display: block;
+    margin-bottom: 5px; 
+    text-align: left; 
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="date"], 
+form textarea, 
+form select {
+    width: 100%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordes de los inputs */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #0056b3; /* Color azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004494; /* Color al pasar el ratón */
+}
+
+/* Tablas */
+table {
+    background-color: #33ccff; /* Color de fondo de la tabla */
+    border-collapse: collapse;
+    border: 3px solid cyan; /* Color del borde */
+    width: 100%;
+    table-layout: fixed;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #0056b3; /* Color del fondo de la leyenda */
+    color: #fff; /* Color del texto de la leyenda */
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th:nth-child(1),
+thead th:nth-child(2) {
+    width: 40%;
+}
+
+thead th:nth-child(3) {
+    width: 20%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #33ccff; /* Color de fondo de filas impares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c7f2ff; /* Color de fondo de filas pares */
+}
+
+tbody tr:hover {
+    background-color: white; /* Color al pasar el ratón sobre las filas */
+}
+
+th {
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3; /* Color del footer */
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+footer a {
+    color: rgb(218, 218, 218); /* Establece el color rojo */
+    text-decoration: underline; /* Subraya los enlaces */
+}
+footer a:hover {
+    color: rgb(116, 0, 0); /* Cambia el color al pasar el ratón por encima, si lo deseas */
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    nav ul {
+        justify-content: flex-start; /* Distribuir los elementos de forma uniforme */
+    }
+    nav ul li {
+        flex: 1 1 auto; /* Dejar que los elementos ocupen el espacio disponible */
+        min-width: 100px; /* Reducir el ancho mínimo en pantallas más pequeñas */
+        margin-bottom: 5px; /* Cambio: reducir margen inferior para filas más compactas */
+    }
+    nav ul li a {
+        font-size: 1em; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+        padding: 8px 10px;
+        height: auto; 
+        line-height: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+    nav ul {
+        justify-content: flex-start; /* Espacio uniforme entre los elementos */
+    }
+
+    nav ul li {
+        flex: 1 1 auto; /* Mantener que los elementos ocupen el ancho disponible */
+        min-width: 80px; /* Reducir el ancho mínimo en pantallas más pequeñas */
+        margin-bottom: 5px; /* Cambio: mantener filas compactas */
+    }
+    nav ul li a {
+        font-size: 0.9em; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+        padding: 6px 8px; /* Cambio: reducir padding en pantallas pequeñas */
+    }
+    main {
+        padding: 10px;
+    }
+    
+}
