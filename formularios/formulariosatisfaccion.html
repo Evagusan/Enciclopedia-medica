@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario satisfacción - Enciclopedia Médica</title>
+        <link href="sans-serif.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="stylesheet" href="../estilos/impresion.css" media="print" />
+        <link rel="stylesheet" href="../estilos/style.css" title="Estilo predeterminado" />
+        <link rel="alternate stylesheet" href="../estilos/modonoche.css" title="Modo Noche" />
+        <link rel="alternate stylesheet" href="../estilos/altocontraste.css" title="Modo Alto Contraste" />
+        <link rel="alternate stylesheet" href="../estilos/accesibleaumentoletra.css" title="Accesible - Tamaño grande" />
+        <link rel="alternate stylesheet" href="../estilos/accesible.css" title="Modo Accesible" />
+    </head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="../index.html" aria-label="Volver a la página principal">
+                <img src="../imagenes/logo.png" alt="Logo de MedlinePlus" width="400" height="200">
+            </a>
+        </div>
+        <h1 style="color: black;">MedlinePlus</h1>
+        <p>Información de salud para usted</p>
+    </header>
+
+    <div id="migas">
+        <p>Ruta de navegación</p>
+	<a href="../index.html">Inicio</a> &gt; <a href="formulariosatisfaccion.html">Formulario de satisfacción</a>
+    </div>
+
+    <h2>Formulario de satisfacción</h2>
+    <p>Nota: Los campos marcados con * son obligatorios.</p>
+    <form action="respuestaformulariosatisfaccion.html" method="GET">
+        <label for="email">&#128100; * Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="fecha">&#128197; * Fecha de Consulta:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <br><br>
+
+        <label for="rango">Seleccione su nivel de satisfacción (0-10):</label>
+        <input type="range" id="rango" name="rango" min="0" max="10">
+        <br><br>
+
+        <label for="Articulos">&#127777; Enfermedad a tratar:</label>
+        <input list="opcionesArticulos" id="Articulos" name="Articulos">
+        <datalist id="opcionesArticulos">
+            <option value="Amigdalitis">
+            <option value="Bronquitis">
+            <option value="Candidiasis Vaginal">
+            <option value="Dengue">
+        </datalist>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Para volver a la página principal pulsa <a href="../index.html">aquí</a>.</p>
+
+    <footer>
+        <p><a href="mailto:egs98@alu.ua.es">Eva Gutiérrez Sánchez</a> &copy; <span lang="en">egs98@alu.ua.es</span></p>
+        <p><a href="../declaracionaccesibilidad.html">Declaración de Accesibilidad</a></p>
+        <p>Universidad de Alicante</p>
+    </footer>
+</body>
+</html>

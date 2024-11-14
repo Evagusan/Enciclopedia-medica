@@ -1,0 +1,54 @@
+/* Estilo de impresión */
+@media print {
+    body {
+        color: #000;
+        background-color: #fff;
+        font-size: 12pt;
+    }
+
+    nav, .saltar-a-contenido, #toggle-contrast {
+        display: none;
+    }
+
+    /* Mantener el header y footer visibles */
+    header {
+        display: block;
+        page-break-after: avoid;
+    }
+
+    footer {
+        display: block;
+        page-break-before: always;
+    }
+    
+    h1, h2, h3, h4 {
+        color: #000;
+    }
+
+    /* Mostrar URL de enlaces */
+    a {
+        color: #000;
+        text-decoration: underline;
+        position: relative;
+    }
+
+    a:after {
+        content: " (" attr(href) ")"; /* Mostrar la URL del enlace entre paréntesis */
+        font-size: 0.9em;
+        color: #333; /* Color más claro para la URL */
+    }
+
+    img.important {
+        display: block;
+    }
+
+    /* Evitar cortes en las páginas */
+    @page {
+        margin: 1in;
+    }
+
+    /* Reglas para evitar "widows" y "orphans" */
+    h1, h2, h3, h4, p {
+        page-break-inside: avoid; /* Evitar saltos de página dentro de títulos y párrafos */
+    }
+}
